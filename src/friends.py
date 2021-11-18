@@ -12,4 +12,7 @@ def likes_to_eat(person, food):
     if snacks.index(food) != ValueError:
         return True
     return False
+
+def add_friend(person, friend):
+    person["friends"].append(friend)
         
