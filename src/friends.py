@@ -15,4 +15,7 @@ def likes_to_eat(person, food):
 
 def add_friend(person, friend):
     person["friends"].append(friend)
+
+def remove_friend(person, friend):
+    person["friends"].pop(person["friends"].index(friend))
         
