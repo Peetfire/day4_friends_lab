@@ -18,4 +18,10 @@ def add_friend(person, friend):
 
 def remove_friend(person, friend):
     person["friends"].pop(person["friends"].index(friend))
+
+def total_money(persons):
+    total = 0
+    for person in persons:
+        total += person["monies"]
+    return total
         
