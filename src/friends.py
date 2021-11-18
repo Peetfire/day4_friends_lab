@@ -47,3 +47,11 @@ def all_favourite_foods(persons):
         for food in foods:
             favourite_foods.append(food)
     return favourite_foods
+
+# 9
+def find_no_friends(persons):
+    no_friends = []
+    for person in persons:
+        if len(person["friends"]) == 0:
+            no_friends.append(person)
+    return no_friends
