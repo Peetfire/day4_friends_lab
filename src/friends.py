@@ -3,22 +3,24 @@
 #1
 def get_name(person):
     return person["name"]
-
+# 2
 def get_favourite_tv_show(person):
     return person["favourites"]["tv_show"]
-
+#3
 def likes_to_eat(person, food):
     snacks = person["favourites"]["snacks"]
     if food in snacks:
         return True
     return False
-
+#4
 def add_friend(person, friend):
     person["friends"].append(friend)
 
+#5
 def remove_friend(person, friend):
     person["friends"].pop(person["friends"].index(friend))
 
+#6
 def total_money(persons):
     total = 0
     for person in persons:
