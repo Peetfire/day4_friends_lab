@@ -24,4 +24,14 @@ def total_money(persons):
     for person in persons:
         total += person["monies"]
     return total
+
+# 7
+def add_money(person, amount):
+    person["monies"] = person["monies"] + amount
         
+def sub_money(person, amount):
+    person["monies"] = person["monies"] - amount
+
+def lend_money(person_1, person_2, amount):
+    sub_money(person_1, amount)
+    add_money(person_2, amount)
