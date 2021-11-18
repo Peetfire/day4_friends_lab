@@ -35,3 +35,15 @@ def sub_money(person, amount):
 def lend_money(person_1, person_2, amount):
     sub_money(person_1, amount)
     add_money(person_2, amount)
+
+# 8
+def get_foods(person):
+    return person["favourites"]["snacks"]
+
+def all_favourite_foods(persons):
+    favourite_foods = []
+    for person in persons:
+        foods = get_foods(person)
+        for food in foods:
+            favourite_foods.append(food)
+    return favourite_foods
