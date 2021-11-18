@@ -83,7 +83,7 @@ class TestFriends(unittest.TestCase):
   def test_person_likes_food__True(self):
     self.assertEqual(True, likes_to_eat(self.person2, "bread"))
 
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_person_likes_food__False(self):
     self.assertEqual(False, likes_to_eat(self.person3, "spinach"))
 
@@ -140,7 +140,7 @@ class TestFriends(unittest.TestCase):
 
   # 10. Find the set of everyone's favourite tv shows joined together, with no duplicates
     # (hint: return a list of all favourite tv shows that only appear once)
-  @unittest.skip("delete this line to run the test")
+  # @unittest.skip("delete this line to run the test")
   def test_unique_favourite_tv_shows(self):
     result = unique_favourite_tv_shows(self.people)
     expected = ["Friends", "Baywatch", "Pokemon", "X-Files"]

@@ -9,7 +9,7 @@ def get_favourite_tv_show(person):
 
 def likes_to_eat(person, food):
     snacks = person["favourites"]["snacks"]
-    if snacks.index(food) != ValueError:
+    if food in snacks:
         return True
     return False
 
@@ -55,3 +55,11 @@ def find_no_friends(persons):
         if len(person["friends"]) == 0:
             no_friends.append(person)
     return no_friends
+
+# 10
+def unique_favourite_tv_shows(persons):
+    all_tv_shows = []
+    for person in persons:
+        if person["favourites"]["tv_show"] not in all_tv_shows:
+            all_tv_shows.append(person["favourites"]["tv_show"])
+    return all_tv_shows
